@@ -1,66 +1,64 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.copyWithSyntaxHighlighting": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.emptySelectionClipboard": false,
-  "workbench.editor.enablePreview": false,
-  "window.newWindowDimensions": "inherit",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "files.trimTrailingWhitespace": true,
-  "diffEditor.renderSideBySide": false,
-  "editor.snippetSuggestions": "top",
-  "editor.detectIndentation": false,
-  "window.nativeFullScreen": false,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "workbench.sideBar.location": "right",
-  "workbench.statusBar.visible": false,
-  "workbench.editor.showTabs": "single",
-  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
-  "editor.fontLigatures": true,
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "files.autoSave": "onWindowChange",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": false,
+  "editor.lineNumbers": "off",
   "editor.glyphMargin": false,
-  "scm.diffDecorations": "none",
-  "editor.hover.enabled": true,
-  "editor.matchBrackets": "never",
-  "workbench.tips.enabled": false,
-  "editor.colorDecorators": false,
-  "git.decorations.enabled": false,
-  "workbench.startupEditor": "none",
-  "editor.lightbulb.enabled": "off",
-  "editor.selectionHighlight": false,
-  "editor.overviewRulerBorder": false,
-  "editor.renderLineHighlight": "none",
-  "editor.occurrencesHighlight": "off",
-  "problems.decorations.enabled": false,
-  "editor.renderControlCharacters": false,
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.gotoLocation.multipleReferences": "goto",
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.gotoLocation.multipleDeclarations": "goto",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.gotoLocation.multipleImplementations": "goto",
-  "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "workbench.activityBar.location": "hidden",
+  "editor.formatOnSave": true,
   "breadcrumbs.enabled": true,
-
+  "workbench.editor.showTabs": "single",
+  "editor.linkedEditing": true,
+  "cSpell.language": "en,pt_PT",
+  /**
+   * Eslint
+   **/
+  "eslint.enable": true,
+  "eslint.validate": ["vue", "react", "typescript", "html", "javascript"],
   /**
    * Typography
    **/
   "workbench.colorTheme": "Catppuccin Frappé",
   "editor.fontFamily": "Dank Mono",
   "workbench.iconTheme": "catppuccin-frappe",
-  "editor.fontSize": 17,
+  "editor.fontSize": 18,
   "editor.lineHeight": 0,
   "chat.editor.fontWeight": "bold",
+  "editor.fontLigatures": true,
   "editor.suggestFontSize": 16,
   "editor.suggestLineHeight": 28,
   "terminal.integrated.fontFamily": "Dank Mono",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.5,
-
+  /**
+   * APC Settings
+   **/
+  "apc.electron": {
+    "backgroundColor": "#2A2E3D",
+    "frame": true,
+    "transparent": true,
+    "titleBarStyle": "hiddenInset",
+    "vibrancy": "ultra-dark",
+    "trafficLightPosition": {
+      "x": 15,
+      "y": 13
+    }
+  },
+  "apc.stylesheet": {
+    "*": "font-family: Dank Mono, monospace;",
+    ".editor .title": "background: transparent !important;",
+    ".actions-container.highlight-toggled": "display: none !important;",
+    ".editor .title .actions-container .action-item a": "visibility: hidden;",
+    ".editor .title .actions-container": "flex-direction: row-reverse;",
+    ".editor .scrollbar .slider ": "visibility: hidden;",
+    ".editor .scrollbar:hover .slider": "visibility: initial;",
+    ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important;"
+  },
   /**
    * Color Customization
    **/
@@ -79,41 +77,40 @@
     "scrollbarSlider.hoverBackground": "#6b6f87",
     "sideBar.border": "#63697355"
   },
-
-  /**
-   * APC Settings
-   **/
-  "apc.electron": {
-    "backgroundColor": "#2A2E3D",
-    "frame": true,
-    "transparent": true,
-    "titleBarStyle": "hiddenInset",
-    "vibrancy": "ultra-dark",
-    "trafficLightPosition": {
-      "x": 15,
-      "y": 13
-    }
-
-    /**
-        Prettier
-    **/
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  "apc.stylesheet": {
-    "*": "font-family: Dank Mono, monospace;",
-    ".editor .title": "background: transparent !important;",
-    ".actions-container.highlight-toggled": "display: none !important;",
-    ".editor .title .actions-container .action-item a": "visibility: hidden;",
-    ".editor .title .actions-container": "flex-direction: row-reverse;",
-    ".editor .scrollbar .slider ": "visibility: hidden;",
-    ".editor .scrollbar:hover .slider": "visibility: initial;",
-    ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important;"
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.accessibilitySupport": "off",
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.guides.indentation": false,
-  "window.customTitleBarVisibility": "never",
-  "workbench.editor.editorActionsLocation": "hidden"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
